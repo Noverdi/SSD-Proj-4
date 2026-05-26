@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 sns.set_theme(style="whitegrid", palette="muted")
 plt.rcParams['figure.dpi'] = 100
 
