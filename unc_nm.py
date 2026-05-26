@@ -159,12 +159,6 @@ def eda_outlier(df: pd.DataFrame) -> None:
     plt.tight_layout()
     plt.show()
 
-    print("\nRingkasan Outlier:")
-    print(pd.DataFrame(outlier_summary)
-            .set_index('Variabel')[['n Outlier', 'Persen (%)']].to_string())
-    print("\nCatatan: Outlier pada 'charges' umumnya berasal dari perokok dengan BMI tinggi —")
-    print("         bukan data error, melainkan kasus berisiko tinggi yang penting secara aktuaria.")
-
 
 def eda_bivariat(df: pd.DataFrame) -> None:
     """Bagian 4 – analisis bivariat: charges vs setiap prediktor."""
